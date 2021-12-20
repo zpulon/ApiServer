@@ -4,6 +4,9 @@
     <TargetFramework>net5.0</TargetFramework>
     <Description>初始化</Description>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>LogCore</Authors>
+    <RepositoryUrl>https://github.com/zpulon/ApiServer.git</RepositoryUrl>
+    <Company>LogCore</Company>
   </PropertyGroup>
 
   <ItemGroup>
