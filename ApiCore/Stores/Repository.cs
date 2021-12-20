@@ -39,7 +39,7 @@ namespace ApiCore.Stores {
         /// <param name="isNoTracking">是否跟踪</param>
         /// <param name="cancellationToken">请求执行凭证</param>
         /// <returns></returns>
-        public async Task<List<P>> GetListAsync(Expression<Func<P, bool>> expression = null, CancellationToken cancellationToken = default(CancellationToken), bool isNoTracking = true) {
+        public virtual async Task<List<P>> GetListAsync(Expression<Func<P, bool>> expression = null, CancellationToken cancellationToken = default(CancellationToken), bool isNoTracking = true) {
             var q = from c in _dbSet
                     select c;
             if (expression != null) {
@@ -57,7 +57,7 @@ namespace ApiCore.Stores {
         /// <param name="isNoTracking">是否跟踪</param>
         /// <param name="cancellationToken">请求执行凭证</param>
         /// <returns></returns>
-        public async Task<P> GetAsync(Expression<Func<P, bool>> expression = null, CancellationToken cancellationToken = default(CancellationToken), bool isNoTracking = true) {
+        public virtual async Task<P> GetAsync(Expression<Func<P, bool>> expression = null, CancellationToken cancellationToken = default(CancellationToken), bool isNoTracking = true) {
             var q = from c in _dbSet
                     select c;
             if (expression != null) {
@@ -74,7 +74,7 @@ namespace ApiCore.Stores {
         /// <param name="entity">添加实体</param>
         /// <param name="cancellationToken">请求执行凭证</param>
         /// <returns></returns>
-        public async Task<P> CreateAsync(P entity, CancellationToken cancellationToken = default(CancellationToken)) {
+        public virtual async Task<P> CreateAsync(P entity, CancellationToken cancellationToken = default(CancellationToken)) {
             if (entity == null) throw new ArgumentNullException(nameof(entity));
             _dbSet.Add(entity);
             try {
@@ -90,7 +90,7 @@ namespace ApiCore.Stores {
         /// <param name="collection">实体集合</param>
         /// <param name="cancellationToken">请求执行凭证</param>
         /// <returns></returns>
-        public async Task<List<P>> CreateRangeAsync(List<P> collection, CancellationToken cancellationToken = default(CancellationToken)) {
+        public virtual async Task<List<P>> CreateRangeAsync(List<P> collection, CancellationToken cancellationToken = default(CancellationToken)) {
             if (collection == null) throw new ArgumentNullException(nameof(collection));
             _dbSet.AddRange(collection);
             try {
@@ -106,7 +106,7 @@ namespace ApiCore.Stores {
         /// <param name="entity">实体对象</param>
         /// <param name="cancellationToken">请求执行凭证</param>
         /// <returns></returns>
-        public async Task<P> UpdateAsync(P entity, CancellationToken cancellationToken = default(CancellationToken)) {
+        public virtual async Task<P> UpdateAsync(P entity, CancellationToken cancellationToken = default(CancellationToken)) {
             if (entity == null) throw new ArgumentNullException(nameof(entity));
             _dbSet.Update(entity);
             try {
@@ -122,7 +122,7 @@ namespace ApiCore.Stores {
         /// <param name="collection">实体集合</param>
         /// <param name="cancellationToken">请求执行凭证</param>
         /// <returns></returns>
-        public async Task<List<P>> UpdateRangeAsync(List<P> collection, CancellationToken cancellationToken = default(CancellationToken)) {
+        public virtual async Task<List<P>> UpdateRangeAsync(List<P> collection, CancellationToken cancellationToken = default(CancellationToken)) {
             if (collection == null) throw new ArgumentNullException(nameof(collection));
             _dbSet.UpdateRange(collection);
             try {
@@ -138,7 +138,7 @@ namespace ApiCore.Stores {
         /// <param name="entity">添加实体</param>
         /// <param name="cancellationToken">请求执行凭证</param>
         /// <returns></returns>
-        public async Task<P> DeleteAsync(P entity, CancellationToken cancellationToken = default(CancellationToken)) {
+        public virtual async Task<P> DeleteAsync(P entity, CancellationToken cancellationToken = default(CancellationToken)) {
             if (entity == null) throw new ArgumentNullException(nameof(entity));
             _dbSet.Remove(entity);
             try {
@@ -154,7 +154,7 @@ namespace ApiCore.Stores {
         /// <param name="collection">实体集合</param>
         /// <param name="cancellationToken">请求执行凭证</param>
         /// <returns></returns>
-        public async Task<List<P>> DeleteRangeAsync(List<P> collection, CancellationToken cancellationToken = default(CancellationToken)) {
+        public virtual async Task<List<P>> DeleteRangeAsync(List<P> collection, CancellationToken cancellationToken = default(CancellationToken)) {
             if (collection == null) throw new ArgumentNullException(nameof(collection));
             _dbSet.RemoveRange(collection);
             try {
