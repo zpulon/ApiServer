@@ -11,8 +11,8 @@ namespace ApiCore.Stores {
     /// 仓储公共处理方法
     /// </summary>
     public class Repository<P, TContext> : IRepository<P> where P : class where TContext : DbContext {
-        private TContext _context;
-        private DbSet<P> _dbSet;
+        private readonly TContext _context;
+        private readonly DbSet<P> _dbSet;
         /// <summary>
         /// 实例化对象
         /// </summary>
