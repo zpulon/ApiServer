@@ -10,7 +10,7 @@ namespace PluginCore.Plugin
 
         public int Order { get; set; }
 
-        public String Description { get; set; }
+        public string Description { get; set; }
 
         public bool IsRunning { get; protected set; }
 

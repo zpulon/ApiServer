@@ -12,7 +12,6 @@ namespace PluginCore.Plugin
 {
     public class DefaultPluginFactory : IPluginFactory
     {
-        //protected ILogger Logger = LoggerManager.GetLogger("Plugin");
 
         protected class PluginInfo : PluginItem
         {

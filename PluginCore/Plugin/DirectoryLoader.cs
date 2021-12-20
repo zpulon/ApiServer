@@ -8,7 +8,6 @@ namespace PluginCore.Plugin
 {
     public class DirectoryLoader
     {
-        //protected ILogger Logger = LoggerManager.GetLogger("DirectoryLoader");
 
         public virtual List<Assembly> LoadFromDirectory(string dir)
         {
@@ -25,15 +24,11 @@ namespace PluginCore.Plugin
                 {
                     continue;
                 }
-                //Logger.Trace("loading assembly: {0}", file);
 
                 try
                 {
-//#if netcore
- //                   Assembly assembly = AssemblyLoadContext.Default.LoadFromAssemblyPath(file);
-//#else
+
                     Assembly assembly = Assembly.LoadFrom(file);
-//#endif
                     assemblyList.Add(assembly);
                 }
                 catch (System.Exception e)

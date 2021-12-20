@@ -5,7 +5,7 @@ namespace LogCore.Log
 {
     public  class DefaultLogger:ILogger
     {
-		private Logger logger;
+		private readonly Logger logger;
 
 		public string LoggerName
 		{
