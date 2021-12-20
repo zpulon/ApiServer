@@ -110,7 +110,7 @@ namespace PluginCore.Plugin
 
                         PluginList.Add(pi);
                     }
-                    catch (System.Exception e)
+                    catch (Exception e)
                     {
                         //Logger.Error("can not load plugin type: {0}\r\n{1}", t.FullName, e.ToString());
                     }
