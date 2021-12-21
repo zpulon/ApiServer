@@ -38,6 +38,6 @@ namespace ApiCore.Dto.Request
         //
         // 摘要:
         //     自定义参数(回调时带回)
-        public Dictionary<string, string> Args { get; set; }
+        public Dictionary<string, object> Args { get; set; }
     }
 }
