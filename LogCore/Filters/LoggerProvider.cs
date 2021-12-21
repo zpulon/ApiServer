@@ -20,7 +20,7 @@ namespace LogCore.Filters
 	}
 	internal class LoggerAdapter : Microsoft.Extensions.Logging.ILogger
 	{
-		private LogCore.Log.ILogger _logger;
+		private Log.ILogger _logger;
 
 		public LoggerAdapter(string name)
 		{
