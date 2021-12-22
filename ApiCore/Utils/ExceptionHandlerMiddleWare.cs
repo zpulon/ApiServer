@@ -91,13 +91,7 @@ namespace ApiCore.Utils {
                 // 记录异常日志到文件中
                 _logger.LogError(message);
             }
-            //while (exception.InnerException != null) {
-            //    if (count > 3) {
-            //        // 现在发现一个内部异常不停输出. 所以暂时先限定为只打印三次即可 2019年7月24日
-            //        break;
-            //    }
-            //    await WriteException(exception.InnerException, count);
-            //}
+            
         }
     }
 }

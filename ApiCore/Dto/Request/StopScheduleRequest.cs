@@ -22,10 +22,5 @@ namespace ApiCore.Dto.Request
         /// </summary>
         [Required(ErrorMessage = "任务名称不能为空")]
         public string JobName { get; set; }
-
-        /// <summary>
-        /// 是否永久删除任务
-        /// </summary>
-        public bool IsDelete { get; set; } = false;
     }
 }

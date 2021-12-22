@@ -16,7 +16,7 @@ namespace ApiCore.JsonFilter
 				PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
 				PropertyNameCaseInsensitive = true,
 				WriteIndented = true,
-				DefaultIgnoreCondition= JsonIgnoreCondition.WhenWritingNull
+				DefaultIgnoreCondition= JsonIgnoreCondition.Never
 			})
 		{
 			setting.Converters.Add(new JsonStringEnumConverter());
