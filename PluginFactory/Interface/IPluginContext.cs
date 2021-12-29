@@ -1,0 +1,18 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
+
+namespace PluginFactory.Interface
+{
+	public interface IPluginContext
+	{
+		IPluginFactory PluginFactory { get; }
+
+		IServiceProvider ServiceProvider { get; }
+
+		CancellationToken CancellationToken { get; }
+	}
+}

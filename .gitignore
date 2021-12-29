@@ -9,3 +9,5 @@
 /LogCore/obj
 /PluginCore/bin
 /PluginCore/obj
+/PluginFactory/bin/Release/net5.0
+/PluginFactory/obj
