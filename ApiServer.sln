@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PluginCore", "PluginCore\Pl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogCore", "LogCore\LogCore.csproj", "{D73743E8-5DDB-4967-BF84-045749835598}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PluginFactory", "PluginFactory\PluginFactory.csproj", "{B69F65A9-2804-4E7E-B9AC-69AA5D341D02}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PluginFactory", "PluginFactory\PluginFactory.csproj", "{B69F65A9-2804-4E7E-B9AC-69AA5D341D02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonAspNetCore", "CommonAspNetCore\CommonAspNetCore.csproj", "{B82F8585-D07D-4CB5-BC9D-64D62CEDA212}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{B69F65A9-2804-4E7E-B9AC-69AA5D341D02}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B69F65A9-2804-4E7E-B9AC-69AA5D341D02}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B69F65A9-2804-4E7E-B9AC-69AA5D341D02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B82F8585-D07D-4CB5-BC9D-64D62CEDA212}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B82F8585-D07D-4CB5-BC9D-64D62CEDA212}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B82F8585-D07D-4CB5-BC9D-64D62CEDA212}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B82F8585-D07D-4CB5-BC9D-64D62CEDA212}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

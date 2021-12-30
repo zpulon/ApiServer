@@ -11,3 +11,5 @@
 /PluginCore/obj
 /PluginFactory/bin/Release/net5.0
 /PluginFactory/obj
+/CommonAspNetCore/obj
+/PluginFactory/bin/Release
